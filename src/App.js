@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import questions from "./data";
 import data from "./data";
 import SingleQuestion from "./question";
 
 function App() {
+	const [questions, setQuestions] = useState(data);
 	return (
 		<main>
 			<div className="container">
